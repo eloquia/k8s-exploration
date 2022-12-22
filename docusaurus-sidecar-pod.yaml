@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: monitored-docs
+  namespace: k8s-exploration
+spec:
+  containers:
+  - name: dox
+    image: my-docusaurus
+  - name: sidecave
+    image: sidecave
