@@ -1,15 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: monitored-docs
+  name: only-sidecave
   namespace: k8s-exploration
 spec:
   containers:
-    # This is an image created via `docker build -t my-docusaurus ./my-docusaurus`
-  - name: dox
-    image: my-docusaurus
-    imagePullPolicy: IfNotPresent # Setting this property to "IfNotPresent" 
-
     # This is an image created via `docker build -t sidecave ./sidecave`
   - name: sidecave
     image: sidecave
